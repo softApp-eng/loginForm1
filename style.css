@@ -3,37 +3,53 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to top, #4caaaa 50%, #edbe32 50%);
+  background-image:url('./media/img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+
 }
 .container {
 }
-
+.containerForm{}
 /* titleStyle  */
 .titleStyle {
-  background-color: #4caaaa;
+  background-color: #ac8f53
+  ;
 }
 
 /* form */
 input[type="email"],
 input[type="password"] {
-  outline: none;
+ 
+  border: none;
+  border-bottom: 2px solid #ac8f53;
+  outline: none !important;
+  border-radius: 0;
 }
 input[type="email"]:hover,
 input[type="password"]:hover {
-  border-color: #edbe32;
+  border-color: #a2a0a5;
   outline: none;
 }
-.formBtn {
-  background-color: #fff;
-  color: #4caaaa;
+.iconInput{
+  color: #ac8f53;
   font-weight: bold;
-  border-color: #4caaaa;
 }
-.formBtn:hover {
-  background-color: #4caaaa;
+.formBtn {
+  background-color: #ac8f53;
   color: #fff;
   font-weight: bold;
   border-color: #fff;
+  border-radius: 50px; 
+  padding: 5px 20px;
+}
+.formBtn:hover {
+  background-color: #fff;
+  color: #ac8f53;
+  font-weight: bold;
+  border-color: #ac8f53;
 }
 /* icons */
 .icons {
@@ -43,6 +59,24 @@ input[type="password"]:hover {
 .iconContains {
   margin-left: 20px;
   margin-right: 20px;
+
+}
+.iconSocial{
+  border: 2px solid #a2a0a5;
+  border-radius: 5em;
+  
+}
+.iconSocial:hover{
+  border: 2px solid #ac8f53;
+  border-radius: 5em;
+  
+  background-color: #ac8f53;
+}
+.iconSocial:hover a{
+  color: #fff;
+}
+.iconSocial a{
+  color: #a2a0a5;
 }
 .icon {
 }
@@ -56,4 +90,47 @@ a .icon:nth-child(2) {
 }
 .icon:nth-child(4) {
   color: #00acee;
+}
+.input-group-text{
+  background-color: #fff;
+}
+
+
+.header__center {
+  font-size: 1rem;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.2rem;
+  align-items: center;
+}
+
+.header__center::before,
+.header__center::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: currentColor;
+}
+
+
+/* respensive */
+
+@media only screen and (min-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 50%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  /* For desktop: */
+  
+  [class*="col-"]
+   {width: 33.33%;}
+}
+
+@media only screen and (min-width: 1200px){
+  [class*="col-"]
+   {width: 33.33%;}
 }

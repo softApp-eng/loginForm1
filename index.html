@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Resto login form</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -22,76 +22,62 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="offset-md-4 col-md-4 p-0 bg-white shadow-lg">
-          <h3 class="text-center py-3 titleStyle text-white">Sign in</h3>
+        <div class=" col-md-4 p-0 bg-white shadow-lg">
+          <h3 class="text-center py-3 titleStyle text-white">RestaName</h3>
           <form class="p-3">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
-              >
-              <input
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                placeholder="Email ..."
-              />
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label"
-                >Password</label
-              >
-              <input
-                type="password"
-                class="form-control"
-                id="exampleInputPassword1"
-                placeholder="Password ..."
-              />
-            </div>
+            <h5 class="text-left pb-2">Sign in</h5>
 
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input ms-md-2"
-                id="exampleCheck1"
-              />
-              <label
-                class="form-check-label ps-md-1 text-secondary"
-                for="exampleCheck1"
-                >Check me out</label
-              >
-              <a href="#" class="float-end pe-4">Forgot password?</a>
-            </div>
-            <div class="mb-3 form-check align-items-center p-0">
-              <button type="submit" class="btn btn-primary w-100 formBtn">
-                Submit
-              </button>
-            </div>
-
-            <div class="mb-3 form-check text-center">
+            <div class="mb-3 form-check text-left p-0">
               <span class="text-secondary">Not a member ?</span>
               <a href="#">Register</a>
             </div>
-            <div class="mb-3 form-check text-center text-secondary">
-              Or sign in with:
+
+            <div class="mb-3">
+             
+              <div class="input-group mb-3 shadow-none">
+                <span class="input-group-text iconInput " id="basic-addon1"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="input-group mb-3 ">
+                <span class="input-group-text iconInput shadow-none" id="basic-addon1"><i class="fas fa-lock"></i></span>
+                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" >
+     
+              </div>
+            </div>
+
+            <div class="mb-3 ">
+            <a href="#" class="" style="margin: 0;padding: 0;">Forgot password?</a>
+            <button type="submit" class="btn btn-primary formBtn float-end" style="">
+              Submit
+            </button>
+            </div>
+           
+
+          
+            <div class="header__center mb-3 text-secondary">
+              
+            <span class="text-dark">Or</span>  
             </div>
             <div class="mb-3 form-check icons">
               <div class="row text-center iconContains">
-                <div class="col-3 ">
-                    <a href="#"><i class="fab fa-facebook-square fa-3x icon" style=" color:  #3b5998;"></i></a>
+                <div class="iconSocial mb-2" style="">
+                    <a href="#" class="text-capitalize p-2 text-decoration-none " style=""><i class="fab fa-facebook fa-1x icon pe-2" style=" color:  #3b5998;"></i>sign in with linkedin</a>
                 </div>
-                <div class="col-3 ">
-                   <a href="#"> <i class="fab fa-linkedin fa-3x icon" style=" color:  #0e76a8;"></i></a>
+                <div class="iconSocial mb-2" >
+                   <a href="#" class="text-capitalize p-2 text-decoration-none"> <i class="fab fa-linkedin-in fa-1x icon pe-2" style=" color:  #0e76a8;"></i> sign in with linkedin</a>
                 </div>
-                <div class="col-3 ">
-                    <a href="#"><i class="fab fa-instagram-square fa-3x icon" style=" color: #E1306C;"></i></a>
+                <div class="iconSocial mb-2">
+                    <a href="#" class="text-capitalize p-2 text-decoration-none"><i class="fab fa-instagram fa-1x icon pe-2" style=" color: #E1306C;"></i>sign in with instagram</a>
                 </div>
-                <div class="col-3  ">
-                    <a href="#"><i class="fab fa-twitter-square fa-3x icon" style=" color:  #00acee;"></i></a>
+                <div class="iconSocial mb-2 ">
+                    <a href="#" class="text-capitalize p-2 text-decoration-none"><i class="fab fa-twitter fa-1x icon pe-2" style=" color:  #00acee;"></i>sign in with twitter</a>
                 </div>
               </div>
             </div>
           </form>
+         
         </div>
       </div>
     </div>
